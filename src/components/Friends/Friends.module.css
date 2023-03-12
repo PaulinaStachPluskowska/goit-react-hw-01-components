@@ -1,6 +1,7 @@
 .friend-list {
     list-style: none;
     padding: 0;
+    margin: 0;
   }
   
   .item {
@@ -14,18 +15,29 @@
     background-color: white;
     border-radius: 10px;
     box-shadow: 1px 1px 1px rgb(73, 58, 144), 2px 2px 2px rgb(73, 58, 144), 4px 4px 4px rgb(73, 58, 144);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .item:hover{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: scale(125%);
+    /* cursor: pointer; */
+  }
+
+  .item:last-child{
+    margin-bottom: 0;
   }
   
   .avatar {
-    margin-right: 10px;
+    margin-right: 20px;
     border-radius: 50%;
   }
   
   .status {
     display: block;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
     border-radius: 50%;
   }
   

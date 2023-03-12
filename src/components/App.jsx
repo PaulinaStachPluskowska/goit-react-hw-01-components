@@ -1,11 +1,10 @@
-import { Profile } from "./Profile";
+import { Profile } from "./Profile/Profile";
+import { Statistics } from "./Statistics/Statistics";
+import { FriendList} from "./Friends/FriendList";
+import { TransactionHistory } from "./Transactions/Transactions";
 import user from '../data/user.json';
-import { Statistics } from "./Statistics";
 import statistics from '../data/data.json';
-import {FriendList} from "./FriendList";
-// import { FriendListItem } from "./FriendItem";
 import friends from '../data/friends.json';
-import { TransactionHistory } from "./Transactions";
 import transactions from '../data/transactions.json';
 
 export const App = () => {
@@ -16,12 +15,12 @@ export const App = () => {
       height: 'auto',
       display: 'flex',
       flexDirection: 'column',
-      gap: 50,
+      gap: 75,
+      color: 'white',
+      backgroundColor: 'lightgray',
       justifyContent: 'center',
       alignItems: 'center',
-      fontSize: 24,
-      color: '#010101',
-      backgroundColor: 'lightgray',
+      fontSize: 20,
     }}
     >
       {/* React homework template */}

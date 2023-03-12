@@ -12,7 +12,7 @@ export const Statistics = ({ title = null, statistics}) => {
   
         <ul className={css['stat-list']}>
             {statistics.map((statistics, index) => (
-                <li className={css['item' + (index % 3)]} key={statistics.id} style={{backgroundColor: getRandomHexColor(),}}>
+                <li className={css.item} key={statistics.id} style={{backgroundColor: getRandomHexColor(),}}>
                     <span className={css.label}>{statistics.label}</span>
                     <span className={css.percentage}>{statistics.percentage}%</span>
                 </li>

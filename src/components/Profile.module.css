@@ -1,0 +1,88 @@
+.profile {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgb(73, 58, 144), 2px 2px 2px rgb(73, 58, 144), 4px 4px 4px rgb(73, 58, 144);
+  }
+  .description {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .avatar {
+    width: 50%;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .name {
+    justify-self:center;
+    composes: text;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(73, 58, 144);
+  }
+  .tag {
+    composes: text;
+    color: rgb(73, 58, 144);
+  }
+  .location {
+    justify-self: center;
+    composes: text;
+    color: rgb(73, 58, 144);
+  }
+  .stats {
+    width: 100%;
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+  }
+  .stats li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(154, 140, 222);
+    border: 1px solid rgb(199, 197, 197);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .stats li:first-child{
+    border-right: 1px solid rgb(199, 197, 197);
+    border-radius: 0 0 0 10px;
+  }
+
+  .stats li:last-child{
+    border-left: 1px solid rgb(199, 197, 197);
+    border-radius: 0 0 10px 0;
+  }
+
+  .label {
+    composes: text;
+    color: rgb(73, 58, 144);
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 5px;
+  }
+  .quantity {
+    composes: text;
+    color:white;
+    font-weight: 400;
+    font-size: 16px;
+  }

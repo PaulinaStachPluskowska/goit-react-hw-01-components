@@ -5,13 +5,13 @@ import css from './Statistics.module.css';
 function getRandomHexColor() {
     return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
   }
-export const Statistics = ({ title = null, statistics}) => {
+export const Statistics = ({ title, statistics}) => {
     return (
     <section className={css.statistics}>
         {title && <h2 className={css.title}>{title}</h2>}
   
         <ul className={css['stat-list']}>
-            {statistics.map((statistics, index) => (
+            {statistics.map((statistics) => (
                 <li className={css.item} key={statistics.id} style={{backgroundColor: getRandomHexColor(),}}>
                     <span className={css.label}>{statistics.label}</span>
                     <span className={css.percentage}>{statistics.percentage}%</span>

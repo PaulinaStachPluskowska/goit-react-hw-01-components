@@ -9,6 +9,7 @@
     box-shadow: 1px 1px 1px rgb(73, 58, 144), 2px 2px 2px rgb(73, 58, 144), 4px 4px 4px rgb(73, 58, 144);
   }
   .description {
+    width: 100%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -25,7 +26,7 @@
   .text {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.5em;
   }
   .name {
     justify-self:center;
@@ -48,12 +49,13 @@
     list-style: none;
     flex-direction: row;
     display: flex;
+    justify-self: center;
     border-radius: 10px;
     padding: 0;
     margin: 0;
   }
   .stats li {
-    width: 100%;
+    width: calc(100% / 3);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,13 +78,13 @@
   .label {
     composes: text;
     color: rgb(73, 58, 144);
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 500;
     padding-bottom: 5px;
   }
   .quantity {
     composes: text;
     color:white;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 13px;
   }
